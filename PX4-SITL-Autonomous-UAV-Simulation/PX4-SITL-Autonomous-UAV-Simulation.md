@@ -264,6 +264,12 @@ To execute an autonomous flight mission using the PX4 SITL simulation environmen
     *   **Takeoff:** The system status was checked via `commander status`, followed by issuing `commander takeoff` to trigger internal arming and climb to the default altitude.
     *   **Hover Observation:** The vehicle was allowed to settle into a stable hover state for approximately 10 seconds while monitoring altitude and armed states.
     *   **Landing Sequence:** The landing command `commander land` was executed to initiate vertical descent, touchdown, and automatic motor disarming.
+  
+   ![5.1.png](Images/5.1.png)
+
+   ![5.2.png](Images/5.2.png)
+      
+   ![5.3.png](Images/5.3.png)
 
 ### 3.12 Task 6: Fly a short waypoint mission
 
