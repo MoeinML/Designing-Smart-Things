@@ -159,6 +159,8 @@ To evaluate the flight control system within a complex, realistic environment, t
     gz topic -l
     ```
 
+   ![3.3.png](Images/3.3.png)
+
 ### 3.5 Task 4A: QGroundControl Dependencies and Environment Setup in WSL
 
 To establish ground control station capabilities within the Ubuntu WSL2 environment, required application packages, graphical libraries, and multimedia dependencies were installed using the following structured procedure:
