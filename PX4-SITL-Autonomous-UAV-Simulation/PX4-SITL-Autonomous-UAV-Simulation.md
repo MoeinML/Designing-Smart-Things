@@ -108,19 +108,21 @@ To establish the core flight simulation capabilities, the PX4-Autopilot software
 
    ![2.2.png](Images/2.2.png)
 3.  **Subsystem Reset and Version Verification:** Following the execution of the setup script, the WSL instance was restarted from Windows PowerShell (`wsl --shutdown`) to apply new environment variables. After reopening Ubuntu 24.04, system revisions were recorded for documentation and repeatability:
+    ![2.3.png](Images/2.3.png)
+
     ```bash
     cd ~/PX4-Autopilot
     git rev-parse HEAD
     git submodule status
     gz sim --versions
     ```
-    ![2.3.png](Images/2.3.png)
+    ![2.4.png](Images/2.4.png)
+
 4.  **Baseline Simulation Verification (Checkpoint 2):** To verify system integrity prior to complex environment configurations, a baseline SITL (Software-in-the-Loop) flight simulation was initialized for the Holybro X500 drone frame:
     ```bash
     make px4_sitl gz_x500
     ```
     The build pipeline compiled the PX4 firmware target and successfully launched the Gazebo graphical environment alongside the PX4 console prompt (`pxh>`).
-    ![2.4.png](Images/2.4.png)
 
 ### 3.4 Task 3: Start the X500 in Baylands
 
