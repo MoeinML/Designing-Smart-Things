@@ -293,6 +293,8 @@ To execute the autonomous waypoint navigation mission using the PX4 SITL and Gaz
 
 ![6.3.png](Images/6.3.png)
 
+![6.4.png](Images/6.4.png)
+
 ### 3.13 Task 7: Stop and Restart the Environment
 
 To properly shut down and restart the simulation environment between sessions, the following standard procedure was followed:
