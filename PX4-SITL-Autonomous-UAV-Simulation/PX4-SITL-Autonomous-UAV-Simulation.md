@@ -149,7 +149,12 @@ To evaluate the flight control system within a complex, realistic environment, t
     unset PX4_SYS_AUTOSTART PX4_GZ_MODEL_NAME PX4_GZ_STANDALONE
     PX4_GZ_WORLD=baylands make px4_sitl gz_x500
     ```
-4.  **Entity Tracking and Topic Verification (Checkpoint 3):** Once the Gazebo graphical interface loaded the scenery, the Entity Tree panel was accessed to select the `x500_0` model, and the Follow mode was enabled to lock the observer camera onto the drone. Furthermore, active simulation topics were introspected from a secondary WSL terminal:
+
+    ![3.1.png](Images/3.1.png)
+    
+    ![3.2.png](Images/3.2.png)
+
+5.  **Entity Tracking and Topic Verification (Checkpoint 3):** Once the Gazebo graphical interface loaded the scenery, the Entity Tree panel was accessed to select the `x500_0` model, and the Follow mode was enabled to lock the observer camera onto the drone. Furthermore, active simulation topics were introspected from a secondary WSL terminal:
     ```bash
     gz topic -l
     ```
