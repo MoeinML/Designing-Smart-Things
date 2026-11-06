@@ -286,6 +286,12 @@ To execute the autonomous waypoint navigation mission using the PX4 SITL and Gaz
 3.  **Autonomous Mission Execution (Fly View):**
     *   After verifying the successful upload, the interface was switched to the Fly View.
     *   The autonomous mission was initiated by triggering the Start Mission command, prompting the vehicle to execute the planned trajectory automatically.
+  
+![6.1.png](Images/6.1.png)
+
+![6.2.png](Images/6.2.png)
+
+![6.3.png](Images/6.3.png)
 
 ### 3.13 Task 7: Stop and Restart the Environment
 
