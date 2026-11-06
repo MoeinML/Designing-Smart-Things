@@ -25,7 +25,7 @@
    - [3.11 Task 5: Try Takeoff and Landing](#311-task-5-try-takeoff-and-landing)
    - [3.12 Task 6: Fly a Short Waypoint Mission](#312-task-6-fly-a-short-waypoint-mission)
    - [3.13 Task 7: Stop and Restart the Environment](#313-task-7-stop-and-restart-the-environment)
-4. [Conclusions](#5-conclusions)
+4. [Conclusions](#4-conclusions)
 
 ---
 
@@ -309,7 +309,7 @@ To properly shut down and restart the simulation environment between sessions, t
 
 ---
 
-## 5 Conclusions
+## 4 Conclusions
 
 This laboratory experiment successfully demonstrated the end-to-end implementation and validation of an autonomous UAV flight testing environment using a Software-In-The-Loop (SITL) architecture. By integrating PX4 Autopilot, Gazebo Harmonic, and QGroundControl within a Windows Subsystem for Linux (WSL2) framework, a robust cross-platform simulation pipeline was established without requiring physical flight hardware.
 
