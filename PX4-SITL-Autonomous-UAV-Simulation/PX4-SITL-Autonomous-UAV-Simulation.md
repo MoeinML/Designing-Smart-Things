@@ -1,7 +1,7 @@
-# Laboratory Report 1: Designing Smart Things
+# Laboratory Report 1
 
 **Date:** 10/28/2026  
-**Authors:** Lahashinejad Moein, Bach Quyen, Le Minh, Behazin Navid  
+**Author:** Lahashinejad Moein  
 **Institution:** HAMK (Häme University of Applied Sciences)  
 
 ---
