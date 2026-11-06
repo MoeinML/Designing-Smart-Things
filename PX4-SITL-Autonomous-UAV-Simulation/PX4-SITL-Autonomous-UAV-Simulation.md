@@ -173,17 +173,19 @@ To establish ground control station capabilities within the Ubuntu WSL2 environm
     ```bash
     sudo apt install -y wget libfuse2t64
     ```
+
+   ![4a1.png](Images/4a1.png)
+
 3.  **Graphical and Window System Libraries Deployment:** Essential X11 protocol and window cursor dependencies required by the Qt-based QGroundControl user interface were deployed:
     ```bash
     sudo apt install -y libxcb-xinerama0 libxkbcommon-x11-0 libxcb-cursor0
     ```
 
-   ![4a1.png](Images/4a1.png)
-
 4.  **Multimedia and Video Streaming Framework Integration:** GStreamer multimedia plugins and libraries were installed to support real-time video streaming telemetry from the drone:
     ```bash
     sudo apt install -y gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-gl
     ```
+   ![4a2.png](Images/4a2.png)
 
 ### 3.6 Task 4B: Downloading the Stable QGroundControl AppImage
 
@@ -198,6 +200,8 @@ To obtain the Linux executable for the ground control station, a dedicated direc
     ```bash
     wget -O QGroundControl-x86_64.AppImage "https://d176tv9ibo4jno.cloudfront.net/latest/QGroundControl-x86_64.AppImage"
     ```
+   ![4b.png](Images/4b.png)
+
 
 ### 3.7 Task 4C: Launching QGroundControl via WSLg
 
@@ -211,6 +215,8 @@ To initialize the ground control station interface within the WSL environment, e
     ```bash
     ~/QGroundControl/QGroundControl-x86_64.AppImage
     ```
+    
+   ![4c.png](Images/4c.png)  
 
 ### 3.8 Task 4D: Confirming Automatic Vehicle Detection
 
@@ -221,6 +227,8 @@ To verify the communication link and telemetry synchronization between the simul
     make px4_sitl gz_x500
     ```
 2.  **Telemetry and Interface Verification:** With both Gazebo Harmonic and QGroundControl running concurrently, the QGC interface automatically established a UDP connection, recognized the simulated vehicle (`x500_0`), downloaded the necessary parameters, and displayed the aircraft's position and status within the Flight View map interface.
+
+ ![4d.png](Images/4d.png)
 
 ### 3.9 Task 4E: Troubleshooting and Manual UDP Link Configuration
 
@@ -234,6 +242,8 @@ In scenarios where the simulation vehicle is not automatically detected by QGrou
     *   **Server Addresses:** `127.0.0.1:18570`
     *   **High Latency:** Off
 3.  **Connection Finalization:** The link was saved and connected to bind QGC to the local loopback interface (`127.0.0.1`) listening on port 14550, overriding any potential auto-discovery issues.
+
+![4e.png](Images/4e.png)
 
 ### 3.10 Task 4F: Troubleshooting QGroundControl Startup and AppImage Execution
 
