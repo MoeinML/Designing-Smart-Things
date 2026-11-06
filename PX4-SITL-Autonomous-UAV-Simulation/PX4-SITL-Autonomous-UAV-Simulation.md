@@ -80,11 +80,14 @@ This section outlines the software tools, virtualization environments, and simul
 The initial phase of the laboratory implementation focused on establishing a robust Linux execution environment on the Windows 11 host operating system utilizing the Windows Subsystem for Linux (WSL2). The procedure was structured into the following sequential steps:
 
 1.  **WSL and Distribution Installation:** Using an administrator-privileged Windows PowerShell interface, the virtualization subsystem and the target Linux distribution were deployed by executing the installation command for Ubuntu 24.04 LTS.
+   
    ![1.1.jpeg](Images/1.1.jpeg)
 2.  **User Account Configuration:** Upon the successful provisioning of the WSL instance, a default UNIX user account and a secure password were established within the terminal interface to initialize the operating environment.
-   ![1.1.jpeg](Images/1.2.jpeg)
+   
+   ![1.2.jpeg](Images/1.2.jpeg)
 3.  **Environment Version Validation (Checkpoint 1):** To verify that the virtualization layer was operating under the optimized second-generation architecture, the WSL subsystem was updated and queried using the command-line interface. Verification confirmed that the Ubuntu-24.04 distribution was correctly registered and running under WSL version 2.
-   ![1.1.jpeg](Images/1.3.png)
+   
+   ![1.3.png](Images/1.3.png)
 
 ### 3.3 Task 2: PX4 Autopilot and Gazebo Harmonic Installation
 
@@ -95,11 +98,15 @@ To establish the core flight simulation capabilities, the PX4-Autopilot software
     cd ~
     git clone --recursive https://github.com/PX4/PX4-Autopilot.git
     ```
+
+    ![2.1.png](Images/2.1.png)
 2.  **Automated Toolchain Deployment:** The environment setup script was executed to resolve and install all build dependencies, compiler chains, and the Gazebo simulator framework:
     ```bash
     cd ~/PX4-Autopilot
     bash ./Tools/setup/ubuntu.sh
     ```
+
+   ![2.2.png](Images/2.2.png)
 3.  **Subsystem Reset and Version Verification:** Following the execution of the setup script, the WSL instance was restarted from Windows PowerShell (`wsl --shutdown`) to apply new environment variables. After reopening Ubuntu 24.04, system revisions were recorded for documentation and repeatability:
     ```bash
     cd ~/PX4-Autopilot
@@ -107,11 +114,13 @@ To establish the core flight simulation capabilities, the PX4-Autopilot software
     git submodule status
     gz sim --versions
     ```
+    ![2.3.png](Images/2.3.png)
 4.  **Baseline Simulation Verification (Checkpoint 2):** To verify system integrity prior to complex environment configurations, a baseline SITL (Software-in-the-Loop) flight simulation was initialized for the Holybro X500 drone frame:
     ```bash
     make px4_sitl gz_x500
     ```
     The build pipeline compiled the PX4 firmware target and successfully launched the Gazebo graphical environment alongside the PX4 console prompt (`pxh>`).
+    ![2.4.png](Images/2.4.png)
 
 ### 3.4 Task 3: Start the X500 in Baylands
 
