@@ -81,8 +81,10 @@ The initial phase of the laboratory implementation focused on establishing a rob
 
 1.  **WSL and Distribution Installation:** Using an administrator-privileged Windows PowerShell interface, the virtualization subsystem and the target Linux distribution were deployed by executing the installation command for Ubuntu 24.04 LTS.
    ![1.1.jpeg](Images/1.1.jpeg)
-3.  **User Account Configuration:** Upon the successful provisioning of the WSL instance, a default UNIX user account and a secure password were established within the terminal interface to initialize the operating environment.
-4.  **Environment Version Validation (Checkpoint 1):** To verify that the virtualization layer was operating under the optimized second-generation architecture, the WSL subsystem was updated and queried using the command-line interface. Verification confirmed that the Ubuntu-24.04 distribution was correctly registered and running under WSL version 2.
+2.  **User Account Configuration:** Upon the successful provisioning of the WSL instance, a default UNIX user account and a secure password were established within the terminal interface to initialize the operating environment.
+   ![1.1.jpeg](Images/1.2.jpeg)
+3.  **Environment Version Validation (Checkpoint 1):** To verify that the virtualization layer was operating under the optimized second-generation architecture, the WSL subsystem was updated and queried using the command-line interface. Verification confirmed that the Ubuntu-24.04 distribution was correctly registered and running under WSL version 2.
+   ![1.1.jpeg](Images/1.3.png)
 
 ### 3.3 Task 2: PX4 Autopilot and Gazebo Harmonic Installation
 
