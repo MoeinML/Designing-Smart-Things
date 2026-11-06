@@ -116,7 +116,7 @@ To establish the core flight simulation capabilities, the PX4-Autopilot software
     git submodule status
     gz sim --versions
     ```
-    ![2.4.png](Images/2.4.png)
+   ![2.4.png](Images/2.4.png)
 
 4.  **Baseline Simulation Verification (Checkpoint 2):** To verify system integrity prior to complex environment configurations, a baseline SITL (Software-in-the-Loop) flight simulation was initialized for the Holybro X500 drone frame:
     ```bash
