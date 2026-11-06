@@ -123,7 +123,11 @@ To establish the core flight simulation capabilities, the PX4-Autopilot software
     ```bash
     make px4_sitl gz_x500
     ```
+    ![2.5.png](Images/2.5.png)
+
     The build pipeline compiled the PX4 firmware target and successfully launched the Gazebo graphical environment alongside the PX4 console prompt (`pxh>`).
+
+    ![2.6.png](Images/2.6.png)
 
 ### 3.4 Task 3: Start the X500 in Baylands
 
