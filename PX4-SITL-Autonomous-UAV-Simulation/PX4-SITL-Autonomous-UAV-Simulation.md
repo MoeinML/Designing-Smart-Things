@@ -282,7 +282,7 @@ To execute the autonomous waypoint navigation mission using the PX4 SITL and Gaz
     *   Upon switching to the Plan View in QGC and defining the Home Position on the map, a Takeoff waypoint was designated with a safe altitude set to prevent environmental obstacles such as trees.
     *   A sequence of navigation Waypoints was strategically placed along a predefined route over the map.
     *   A Return-to-Launch (RTL) command was appended at the final stage of the route to ensure automated return and landing.
-    *   The mission plan was saved (`Baylands First Mission.plan`) and successfully uploaded to the vehicle using the Upload interface.
+    *   The mission plan was saved (`Baylands_First_Mission.plan`) and successfully uploaded to the vehicle using the Upload interface.
 3.  **Autonomous Mission Execution (Fly View):**
     *   After verifying the successful upload, the interface was switched to the Fly View.
     *   The autonomous mission was initiated by triggering the Start Mission command, prompting the vehicle to execute the planned trajectory automatically.
