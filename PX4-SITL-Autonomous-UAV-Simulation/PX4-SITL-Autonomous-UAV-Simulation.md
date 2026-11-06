@@ -177,6 +177,9 @@ To establish ground control station capabilities within the Ubuntu WSL2 environm
     ```bash
     sudo apt install -y libxcb-xinerama0 libxkbcommon-x11-0 libxcb-cursor0
     ```
+
+   ![4a1.png](Images/4a1.png)
+
 4.  **Multimedia and Video Streaming Framework Integration:** GStreamer multimedia plugins and libraries were installed to support real-time video streaming telemetry from the drone:
     ```bash
     sudo apt install -y gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-gl
